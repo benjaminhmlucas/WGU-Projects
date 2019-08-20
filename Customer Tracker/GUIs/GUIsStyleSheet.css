@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 22, 2019, 1:44:51 PM
+    Author     : lucasb
+*/
+//---------------------------Login Window---------------------------//
+#rootPane{
+    -fx-background-image: url("/GUIs/sales_picture.jpg");
+    -fx-background-repeat:space;  
+    -fx-background-position: center center;
+    -fx-vgap: 10px;
+}
+#rootTop{
+    -fx-background-radius:20;
+    -fx-border-radius: 20;
+    -fx-background-color: #fff;
+    -fx-border-color:#000;
+    -fx-padding: 10px;    
+}
+#rootBottom{
+    -fx-background-radius:20;
+    -fx-border-radius: 20;
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-padding: 10px;
+    -fx-vgap: 10px;
+}
+//---------------------------Management Window---------------------------//
+//All Tabs
+#vboxApptRoot,#vboxReportsRoot,#vboxCustomersRoot,#vboxUsersRoot{
+    -fx-padding: 10px;
+    -fx-background-image: url("/GUIs/sales_picture.jpg");
+    -fx-background-size: cover;
+    -fx-border-width:2px;
+    -fx-border-color:#000;
+}
+#buttonBoxHorizontal,#monthlyReportsButtons{
+    -fx-alignment:BASELINE_CENTER;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+//Appointment Tab/Reports Tab
+#filterSelectionHBox{
+    -fx-background-color: #fff;
+    -fx-background-radius:30;
+    -fx-border-radius: 30;
+    -fx-border-color:#000;
+    -fx-alignment:BASELINE_CENTER;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+#monthlyReportInfoBox,#userScheduleButtonBox,#firstOpenedReportInfoBox{
+    -fx-background-color: #fff;
+    -fx-background-radius:30;
+    -fx-border-radius: 30;
+    -fx-border-color:#000;
+    -fx-alignment:CENTER;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+
+
+#contactText,#userText,#apptContactLabelValue{
+   -fx-fill: blue;
+   -fx-text-fill: blue;
+}
+//---------------------------Add/Edit Windows---------------------------//
+
+#root{
+    -fx-background-image: url("/GUIs/desktop.png");
+    -fx-background-repeat:space;
+    -fx-background-size:stretch;
+    -fx-background-position: center center;
+    -fx-alignment: CENTER;
+    -fx-spacing: 10px;
+}
+#windowTitle{
+    -fx-background-color: #fff;
+    -fx-background-radius:30;
+    -fx-border-radius: 30;
+    -fx-border-color:#000;
+    -fx-padding: 10px;
+}
+#userInputBoxes{
+    -fx-alignment: CENTER;
+    -fx-background-color: #fff;
+    -fx-background-radius:30;
+    -fx-border-radius: 30;
+    -fx-border-color:#000;
+    -fx-padding: 20px;   
+    -fx-spacing: 10px;
+}
+#buttonBox{
+    -fx-alignment: BASELINE_RIGHT;
+}
+#apptDescriptionBox,#apptLocationLabel{
+    -fx-alignment:TOP_LEFT;
+}
+
+
+
