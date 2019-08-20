@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2019, 2:26:37 PM
+    Author     : lucasb
+*/
+//Global
+
+//Main Window*******************************************************************
+    //Top*********************
+    #mainTitle {
+        -fx-alignment: CENTER_LEFT;
+        -fx-text-fill: darkblue;
+        -fx-font-weight: bold;
+        -fx-font-size: 2em;  
+        -fx-padding: 25px;
+    }
+    #topRowTables{
+        -fx-spacing: 30px;
+        -fx-padding: 10px;
+    }
+    #rightTopRowTables{
+        -fx-alignment: CENTER_RIGHT;
+        -fx-spacing: 30px;
+    }    
+    #lefTopRowTables{
+        -fx-alignment: CENTER_LEFT;    
+    }   
+    #tableHeaderLabelParts{
+        -fx-label-padding: 0px 230px 0px 0px;
+        -fx-font-weight: bold;
+        -fx-font-size: 1em;
+    }
+    #tableHeaderLabelProducts{
+        -fx-label-padding: 0px 170px 0px 0px;
+        -fx-font-weight: bold;
+        -fx-font-size: 1em; 
+    }
+    //hide horizontal scroll bars
+    .table-view *.scroll-bar:horizontal *.increment-button ,
+    .table-view *.scroll-bar:horizontal *.decrement-button {
+        -fx-background-color: null;
+        -fx-background-radius: 0;
+        -fx-background-insets: 0;
+        -fx-padding: 0;
+    }
+    .table-view *.scroll-bar:horizontal *.increment-arrow,
+    .table-view *.scroll-bar:horizontal *.decrement-arrow {
+        -fx-background-color: null;
+        -fx-background-radius: 0;
+        -fx-background-insets: 0;
+        -fx-padding: 0;
+        -fx-shape: null;
+    }
+    //Middle*******************
+    .table-column{
+        -fx-pref-width: 150px;
+        -fx-alignment: CENTER_LEFT;    
+    }
+    #productsGroup, #partsGroup{
+        -fx-padding: 5;
+    }
+        //Bottom Row
+    #bottomRowButtons{
+        -fx-alignment: CENTER_RIGHT;
+        -fx-padding: 10px 50px 10px 10px;
+        -fx-spacing: 30px;    
+    }
+    #bottomExitButton{
+        -fx-padding: 15px 55px 15px 15px;
+        -fx-alignment: CENTER_RIGHT;
+    }
+    //Secondary Windows**************************************************************
+    //For Parts And Products
+    #secondaryMainTitle{
+        -fx-alignment: CENTER_LEFT;
+        -fx-text-fill: darkblue;
+        -fx-font-weight: bold;
+        -fx-font-size: 2em;  
+        -fx-padding: 25px; 
+    }
+    //Secondary Windows Parts Styles
+    //Top**************************
+    #topRowSecondaryScreens{
+        -fx-alignment: CENTER-LEFT; 
+        -fx-spacing: 10px;
+    }       
+    //Middle***********************
+    #centerGrid{
+        -fx-alignment: CENTER;   
+        -fx-hgap: 5px;
+        -fx-vgap: 5px;
+    }
+    //Bottom***********************
+    #bottomButtonsSecondary{
+       -fx-alignment: CENTER_RIGHT;
+       -fx-spacing: 30px;
+       -fx-padding: 10px 50px 20px 10px;
+    }
+     //Secondary Windows Products Styles
+    //Left**************************
+    #leftRootVBox{
+       -fx-alignment: CENTER_LEFT;        
+       -fx-padding: 10px 50px 70px 20px;
+    }
+    #dataEntryGrid{
+        -fx-vgap: 10px;
+        -fx-hgap: 10px;
+        -fx-padding: 10px 0px 70px 0px;
+    }
+    //Right***********************
+    #searchBar{
+        -fx-alignment: CENTER;
+        -fx-padding: 10px 0px 10px 0px;
+        -fx-spacing: 30px;        
+    }
+    #addBtnRow{
+        -fx-alignment: CENTER_RIGHT;
+        -fx-padding: 10px 30px 10px 10px;
+    }
+    #deleteBtnRow{
+        -fx-alignment: CENTER_RIGHT;
+        -fx-padding: 10px 30px 10px 10px;
+    }
+    #saveCancelBtnRow{
+        -fx-alignment: CENTER_RIGHT;
+        -fx-padding: 10px 30px 10px 10px;
+        -fx-spacing: 30px;
+    }
