@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.benjaminlucaswebdesigns.studentprogresstracker">
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AssessmentActivity.AssessmentEditor"></activity>
+        <activity
+            android:name=".AssessmentActivity.AssessmentList"
+            android:label="@string/title_activity_assessment_list"
+            android:parentActivityName=".CourseActivity.CourseEditor"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.benjaminlucaswebdesigns.studentprogresstracker.CourseActivity.CourseEditor" />
+        </activity>
+        <activity android:name=".CourseActivity.CourseMentorEditor" />
+        <activity android:name=".CourseActivity.CourseEditor" />
+        <activity
+            android:name=".CourseActivity.CourseList"
+            android:label="@string/title_activity_course_list"
+            android:parentActivityName=".TermActivity.TermEditor"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.benjaminlucaswebdesigns.studentprogresstracker.TermActivity.TermEditor" />
+        </activity>
+        <activity android:name=".TermActivity.TermEditor" />
+        <activity
+            android:name=".TermActivity.TermList"
+            android:label="Term List"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.benjaminlucaswebdesigns.studentprogresstracker.MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".Utilities.NotificationReceiver"></receiver>
+    </application>
+
+</manifest>
